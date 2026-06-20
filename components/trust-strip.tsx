@@ -19,9 +19,9 @@ export function TrustStrip() {
             <Badge
               key={badge}
               variant="secondary"
-              className="flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium bg-slate-50 text-slate-700 border border-slate-200 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 transition-colors"
+              className="flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium bg-secondary text-foreground border border-border hover:bg-muted transition-colors"
             >
-              <CheckCircle2 className="size-3.5 text-green-500 shrink-0" aria-hidden="true" />
+              <CheckCircle2 className="size-3.5 text-primary shrink-0" aria-hidden="true" />
               {badge}
             </Badge>
           ))}

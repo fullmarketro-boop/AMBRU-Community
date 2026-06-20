@@ -49,7 +49,7 @@ export function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Ambru Community home"
         >
-          <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+          <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <Zap className="size-4" />
           </span>
           <span>
@@ -75,7 +75,7 @@ export function Navbar() {
         <div className="hidden md:flex">
           <Button
             asChild
-            className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold px-5"
+            className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-5"
           >
             <a
               href="https://skool.com/humble-community"
@@ -103,7 +103,7 @@ export function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="md:hidden bg-white/95 backdrop-blur-md border-b border-border px-4 pb-4"
+          className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-4 pb-4"
         >
           <ul className="flex flex-col gap-1 list-none">
             {navLinks.map((link) => (
@@ -119,7 +119,7 @@ export function Navbar() {
             <li className="pt-2">
               <Button
                 asChild
-                className="w-full rounded-full bg-primary text-white font-semibold"
+                className="w-full rounded-full bg-primary text-primary-foreground font-semibold"
               >
                 <a
                   href="https://skool.com/humble-community"

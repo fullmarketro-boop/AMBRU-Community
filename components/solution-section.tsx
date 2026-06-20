@@ -7,27 +7,24 @@ const solutions = [
     title: "Discover Tools",
     description:
       "Find useful AI tools for marketing, productivity, research, content creation, automation and business projects.",
-    gradient: "from-blue-500 to-cyan-500",
-    bgLight: "bg-blue-50",
-    border: "border-blue-100",
+    bgLight: "bg-secondary",
+    border: "border-border",
   },
   {
     icon: BookOpen,
     title: "Learn Better Methods",
     description:
       "Explore practical workflows, prompts, use cases and habits that help you get better results from AI.",
-    gradient: "from-purple-500 to-blue-500",
-    bgLight: "bg-purple-50",
-    border: "border-purple-100",
+    bgLight: "bg-secondary",
+    border: "border-border",
   },
   {
     icon: HeartHandshake,
     title: "Get Support",
     description:
       "Ask questions, share experiments and learn from other members who use AI in different real-world projects.",
-    gradient: "from-cyan-500 to-green-500",
-    bgLight: "bg-cyan-50",
-    border: "border-cyan-100",
+    bgLight: "bg-secondary",
+    border: "border-border",
   },
 ]
 
@@ -35,7 +32,7 @@ export function SolutionSection() {
   return (
     <section
       id="solution"
-      className="py-20 sm:py-28 bg-slate-50/70"
+      className="py-20 sm:py-28 bg-muted/40"
       aria-labelledby="solution-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -46,19 +43,19 @@ export function SolutionSection() {
           >
             A free community where AI learning becomes{" "}
             <span className="text-primary">practical</span>,{" "}
-            <span style={{ color: "var(--brand-purple)" }}>social</span> and easier to apply.
+            social and easier to apply.
           </h2>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-3">
-          {solutions.map(({ icon: Icon, title, description, gradient, bgLight, border }) => (
+          {solutions.map(({ icon: Icon, title, description, bgLight, border }) => (
             <Card
               key={title}
-              className={`group border ${border} bg-white shadow-sm transition-all duration-200 hover:shadow-lg hover:-translate-y-1 overflow-hidden`}
+              className={`group border ${border} bg-card shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1 overflow-hidden`}
             >
               <CardHeader className="pb-3">
                 <div
-                  className={`flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br ${gradient} text-white mb-3`}
+                  className={`flex size-12 items-center justify-center rounded-2xl ${bgLight} text-primary mb-3`}
                   aria-hidden="true"
                 >
                   <Icon className="size-6" />
@@ -70,9 +67,8 @@ export function SolutionSection() {
                   {description}
                 </CardDescription>
               </CardContent>
-              {/* Bottom accent */}
               <div
-                className={`h-1 w-full bg-gradient-to-r ${gradient} opacity-60 group-hover:opacity-100 transition-opacity`}
+                className="h-0.5 w-full bg-border group-hover:bg-primary transition-colors duration-200"
                 aria-hidden="true"
               />
             </Card>

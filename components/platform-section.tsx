@@ -13,7 +13,7 @@ export function PlatformSection() {
   return (
     <section
       id="community"
-      className="py-20 sm:py-28 bg-slate-50/70"
+      className="py-20 sm:py-28 bg-muted/40"
       aria-labelledby="platform-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -28,17 +28,17 @@ export function PlatformSection() {
 
         <div className="grid gap-6 sm:grid-cols-2 max-w-4xl mx-auto">
           {/* Skool Card */}
-          <Card className="group relative overflow-hidden border-2 border-blue-200 bg-white shadow-md transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
+          <Card className="group relative overflow-hidden border-2 border-primary/30 bg-card shadow-md transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
             <div
-              className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500"
+              className="absolute inset-x-0 top-0 h-1 bg-primary"
               aria-hidden="true"
             />
             <CardHeader className="pb-3 pt-7">
               <div className="flex items-center justify-between mb-3">
-                <div className="flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
                   <GraduationCap className="size-6" aria-hidden="true" />
                 </div>
-                <Badge className="rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-xs">
+                <Badge className="rounded-full bg-secondary text-foreground border border-border text-xs">
                   Recommended
                 </Badge>
               </div>
@@ -57,7 +57,7 @@ export function PlatformSection() {
                   { icon: Users, label: "Community challenges" },
                 ].map(({ icon: Icon, label }) => (
                   <li key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Icon className="size-4 text-blue-500 shrink-0" aria-hidden="true" />
+                    <Icon className="size-4 text-primary shrink-0" aria-hidden="true" />
                     <span>{label}</span>
                   </li>
                 ))}
@@ -66,7 +66,7 @@ export function PlatformSection() {
             <CardFooter>
               <Button
                 asChild
-                className="w-full rounded-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-sm shadow-blue-200 transition-all hover:shadow-md"
+                className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all hover:shadow-md"
               >
                 <a
                   href="https://skool.com/humble-community"
@@ -82,17 +82,17 @@ export function PlatformSection() {
           </Card>
 
           {/* Facebook Card */}
-          <Card className="group relative overflow-hidden border-2 border-purple-200 bg-white shadow-md transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
+          <Card className="group relative overflow-hidden border-2 border-border bg-card shadow-md transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
             <div
-              className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-purple-500 to-blue-500"
+              className="absolute inset-x-0 top-0 h-1 bg-border"
               aria-hidden="true"
             />
             <CardHeader className="pb-3 pt-7">
               <div className="flex items-center justify-between mb-3">
-                <div className="flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 text-white">
+                <div className="flex size-12 items-center justify-center rounded-2xl bg-secondary text-primary">
                   <Users className="size-6" aria-hidden="true" />
                 </div>
-                <Badge className="rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-xs">
+                <Badge className="rounded-full bg-secondary text-foreground border border-border text-xs">
                   Social Group
                 </Badge>
               </div>
@@ -111,7 +111,7 @@ export function PlatformSection() {
                   { icon: Users, label: "Member experiences" },
                 ].map(({ icon: Icon, label }) => (
                   <li key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Icon className="size-4 text-purple-500 shrink-0" aria-hidden="true" />
+                    <Icon className="size-4 text-muted-foreground shrink-0" aria-hidden="true" />
                     <span>{label}</span>
                   </li>
                 ))}
@@ -121,7 +121,7 @@ export function PlatformSection() {
               <Button
                 asChild
                 variant="outline"
-                className="w-full rounded-full font-semibold border-purple-200 text-purple-700 hover:bg-purple-50 transition-all"
+                className="w-full rounded-full font-semibold border-border text-foreground hover:bg-secondary transition-all"
               >
                 <a
                   href="https://facebook.com/groups/humblecommunity"

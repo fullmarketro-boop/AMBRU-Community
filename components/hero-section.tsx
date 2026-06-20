@@ -11,19 +11,19 @@ import {
 } from "lucide-react"
 
 const floatingCards = [
-  { icon: Wrench, label: "AI Tool Cards", color: "bg-blue-50 text-blue-600 border-blue-100" },
-  { icon: Lightbulb, label: "Prompt Tips", color: "bg-purple-50 text-purple-600 border-purple-100" },
-  { icon: MessageSquare, label: "Community Chat", color: "bg-cyan-50 text-cyan-600 border-cyan-100" },
-  { icon: Sparkles, label: "Weekly Practice", color: "bg-green-50 text-green-600 border-green-100" },
-  { icon: Users, label: "Project Support", color: "bg-orange-50 text-orange-600 border-orange-100" },
+  { icon: Wrench, label: "AI Tool Cards", color: "bg-secondary text-foreground border-border" },
+  { icon: Lightbulb, label: "Prompt Tips", color: "bg-secondary text-foreground border-border" },
+  { icon: MessageSquare, label: "Community Chat", color: "bg-secondary text-foreground border-border" },
+  { icon: Sparkles, label: "Weekly Practice", color: "bg-secondary text-foreground border-border" },
+  { icon: Users, label: "Project Support", color: "bg-secondary text-foreground border-border" },
 ]
 
 const avatarColors = [
-  "bg-blue-500",
-  "bg-purple-500",
-  "bg-cyan-500",
-  "bg-green-500",
-  "bg-rose-500",
+  "bg-primary",
+  "bg-primary/80",
+  "bg-primary/60",
+  "bg-primary/40",
+  "bg-primary/20",
 ]
 
 const avatarInitials = ["A", "M", "S", "J", "K"]
@@ -35,15 +35,11 @@ export function HeroSection() {
       className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28"
       aria-labelledby="hero-heading"
     >
-      {/* Subtle background gradients */}
+      {/* Subtle background */}
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         aria-hidden="true"
-      >
-        <div className="absolute -top-32 -left-32 size-96 rounded-full bg-blue-100/50 blur-3xl" />
-        <div className="absolute -top-16 right-0 size-80 rounded-full bg-purple-100/40 blur-3xl" />
-        <div className="absolute bottom-0 left-1/2 size-72 rounded-full bg-cyan-100/30 blur-3xl -translate-x-1/2" />
-      </div>
+      />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:items-center lg:gap-12">
@@ -51,7 +47,7 @@ export function HeroSection() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:max-w-xl">
             <Badge
               variant="secondary"
-              className="mb-4 gap-1.5 rounded-full px-3 py-1 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100"
+              className="mb-4 gap-1.5 rounded-full px-3 py-1 text-xs font-medium bg-secondary text-muted-foreground border border-border"
             >
               <Sparkles className="size-3" />
               Free AI Learning Community
@@ -64,9 +60,7 @@ export function HeroSection() {
               Learn AI Tools{" "}
               <span className="text-primary">Together.</span>{" "}
               Build Better Projects With a{" "}
-              <span
-                style={{ color: "var(--brand-purple)" }}
-              >
+              <span className="text-primary">
                 Supportive Community.
               </span>
             </h1>
@@ -81,7 +75,7 @@ export function HeroSection() {
               <Button
                 asChild
                 size="lg"
-                className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-md shadow-blue-200 px-7 transition-all hover:shadow-lg hover:shadow-blue-300 hover:-translate-y-0.5"
+                className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-7 transition-all hover:-translate-y-0.5"
               >
                 <a
                   href="https://skool.com/humble-community"
@@ -162,14 +156,14 @@ export function HeroSection() {
                   </div>
                 ))}
                 {/* Chat bubble card spanning full width */}
-                <div className="col-span-2 rounded-xl border border-blue-100 bg-blue-50 p-3">
+                <div className="col-span-2 rounded-xl border border-border bg-muted p-3">
                   <div className="flex items-start gap-2">
-                    <div className="size-6 rounded-full bg-blue-500 flex items-center justify-center text-white text-[10px] font-bold shrink-0">
+                    <div className="size-6 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-[10px] font-bold shrink-0">
                       M
                     </div>
                     <div>
-                      <p className="text-[10px] font-semibold text-blue-800 mb-0.5">Maria</p>
-                      <p className="text-[10px] text-blue-700 leading-relaxed">
+                      <p className="text-[10px] font-semibold text-foreground mb-0.5">Maria</p>
+                      <p className="text-[10px] text-muted-foreground leading-relaxed">
                         Anyone tried using ChatGPT for research summaries? Sharing my workflow here...
                       </p>
                     </div>
@@ -193,14 +187,7 @@ export function HeroSection() {
             </div>
 
             {/* Decorative blobs */}
-            <div
-              className="pointer-events-none absolute -right-6 -top-6 size-24 rounded-full bg-purple-200/40 blur-2xl"
-              aria-hidden="true"
-            />
-            <div
-              className="pointer-events-none absolute -left-6 -bottom-6 size-24 rounded-full bg-cyan-200/40 blur-2xl"
-              aria-hidden="true"
-            />
+
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export function Footer() {
               className="flex items-center gap-2 font-bold text-foreground text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-md justify-center sm:justify-start"
               aria-label="Ambru Community home"
             >
-              <span className="flex size-7 items-center justify-center rounded-lg bg-primary text-white">
+              <span className="flex size-7 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Zap className="size-3.5" aria-hidden="true" />
               </span>
               AMBRU Community

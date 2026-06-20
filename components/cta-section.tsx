@@ -5,18 +5,10 @@ export function CtaSection() {
   return (
     <section
       id="join"
-      className="relative overflow-hidden py-20 sm:py-28"
-      style={{ backgroundColor: "var(--brand-dark)" }}
+      className="py-20 sm:py-28 bg-foreground"
       aria-labelledby="cta-heading"
     >
-      {/* Background decoration */}
-      <div className="pointer-events-none absolute inset-0 -z-0" aria-hidden="true">
-        <div className="absolute -top-24 -left-24 size-80 rounded-full bg-blue-700/20 blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 size-80 rounded-full bg-purple-700/20 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 size-64 rounded-full bg-cyan-700/10 blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl flex flex-col items-center text-center gap-6">
           <h2
             id="cta-heading"
@@ -24,7 +16,7 @@ export function CtaSection() {
           >
             Start learning AI with people who are building, testing and sharing together.
           </h2>
-          <p className="text-base leading-relaxed text-slate-300 max-w-lg">
+          <p className="text-base leading-relaxed text-background/70 max-w-lg">
             Join the free Ambru Community and discover better ways to use AI tools in real projects.
           </p>
 
@@ -32,7 +24,7 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg shadow-blue-900/40 px-7 transition-all hover:shadow-xl hover:-translate-y-0.5"
+              className="rounded-full bg-background hover:bg-background/90 text-foreground font-semibold px-7 transition-all hover:-translate-y-0.5"
             >
               <a
                 href="https://skool.com/humble-community"

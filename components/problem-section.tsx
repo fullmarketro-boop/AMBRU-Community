@@ -11,27 +11,27 @@ const problems = [
   {
     icon: Layers,
     text: "Too many AI tools to choose from.",
-    color: "text-blue-500 bg-blue-50",
+    color: "text-primary bg-secondary",
   },
   {
     icon: HelpCircle,
     text: "Hard to know which methods actually work.",
-    color: "text-purple-500 bg-purple-50",
+    color: "text-primary bg-secondary",
   },
   {
     icon: Shuffle,
     text: "Prompts often feel random and inconsistent.",
-    color: "text-cyan-500 bg-cyan-50",
+    color: "text-primary bg-secondary",
   },
   {
     icon: MessageCircleOff,
     text: "People get stuck without feedback.",
-    color: "text-orange-500 bg-orange-50",
+    color: "text-primary bg-secondary",
   },
   {
     icon: FileQuestion,
     text: "Most tutorials don't show real use cases.",
-    color: "text-rose-500 bg-rose-50",
+    color: "text-primary bg-secondary",
   },
 ]
 
