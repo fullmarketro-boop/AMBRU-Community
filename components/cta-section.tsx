@@ -5,18 +5,18 @@ export function CtaSection() {
   return (
     <section
       id="join"
-      className="py-20 sm:py-28 bg-foreground"
+      className="py-20 sm:py-28 bg-card border-t border-border"
       aria-labelledby="cta-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl flex flex-col items-center text-center gap-6">
           <h2
             id="cta-heading"
-            className="text-3xl font-bold tracking-tight text-white text-balance sm:text-4xl lg:text-5xl"
+            className="text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl lg:text-5xl"
           >
             Start learning AI with people who are building, testing and sharing together.
           </h2>
-          <p className="text-base leading-relaxed text-background/70 max-w-lg">
+          <p className="text-base leading-relaxed text-muted-foreground max-w-lg">
             Join the free Ambru Community and discover better ways to use AI tools in real projects.
           </p>
 
@@ -24,7 +24,7 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-background hover:bg-background/90 text-foreground font-semibold px-7 transition-all hover:-translate-y-0.5"
+              className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-7 transition-all hover:-translate-y-0.5"
             >
               <a
                 href="https://skool.com/humble-community"
@@ -41,7 +41,7 @@ export function CtaSection() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full font-semibold border-white/20 text-white hover:bg-white/10 hover:border-white/40 px-7 transition-all hover:-translate-y-0.5 bg-transparent"
+              className="rounded-full font-semibold border-border text-foreground hover:bg-secondary px-7 transition-all hover:-translate-y-0.5"
             >
               <a
                 href="https://facebook.com/groups/humblecommunity"

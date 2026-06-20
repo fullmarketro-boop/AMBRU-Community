@@ -12,7 +12,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer
-      className="bg-white border-t border-border py-10"
+      className="bg-card border-t border-border py-10"
       aria-label="Site footer"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

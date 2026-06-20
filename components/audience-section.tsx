@@ -22,14 +22,14 @@ const audience = [
 ]
 
 const avatarColors = [
-  "bg-blue-500",
-  "bg-purple-500",
-  "bg-cyan-500",
-  "bg-green-500",
-  "bg-orange-500",
-  "bg-rose-500",
-  "bg-indigo-500",
-  "bg-teal-500",
+  "bg-primary",
+  "bg-primary/85",
+  "bg-primary/70",
+  "bg-primary/60",
+  "bg-primary/50",
+  "bg-primary/40",
+  "bg-primary/30",
+  "bg-primary/20",
 ]
 
 export function AudienceSection() {
@@ -54,11 +54,11 @@ export function AudienceSection() {
           {audience.map(({ icon: Icon, label, desc }, i) => (
             <Card
               key={label}
-              className="group border border-border bg-white shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-blue-200"
+              className="group border border-border bg-card shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-primary/40"
             >
               <CardContent className="flex flex-col items-center text-center gap-3 p-5">
                 <div
-                  className={`flex size-12 items-center justify-center rounded-full ${avatarColors[i]} text-white transition-transform group-hover:scale-110`}
+                  className={`flex size-12 items-center justify-center rounded-full ${avatarColors[i]} text-primary-foreground transition-transform group-hover:scale-110`}
                   aria-hidden="true"
                 >
                   <Icon className="size-5" />

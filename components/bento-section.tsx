@@ -107,7 +107,7 @@ export function BentoSection() {
           {items.map(({ icon: Icon, title, description, span, accent, iconColor }) => (
             <Card
               key={title}
-              className={`group border ${accent} bg-white/80 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${span}`}
+              className={`group border ${accent} shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 ${span}`}
             >
               <CardContent className="flex flex-col gap-3 p-5">
                 <div

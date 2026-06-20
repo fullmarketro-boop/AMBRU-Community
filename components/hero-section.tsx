@@ -111,7 +111,7 @@ export function HeroSection() {
                 {avatarColors.map((color, i) => (
                   <div
                     key={i}
-                    className={`flex size-8 items-center justify-center rounded-full ${color} text-white text-xs font-bold ring-2 ring-white`}
+                    className={`flex size-8 items-center justify-center rounded-full ${color} text-primary-foreground text-xs font-bold ring-2 ring-background`}
                     aria-hidden="true"
                   >
                     {avatarInitials[i]}
@@ -127,11 +127,11 @@ export function HeroSection() {
           {/* Right — visual dashboard */}
           <div className="relative w-full max-w-sm sm:max-w-md lg:flex-1 lg:max-w-none">
             {/* Main card */}
-            <div className="relative rounded-2xl border border-border bg-white shadow-2xl shadow-slate-200/60 p-5 sm:p-6">
+            <div className="relative rounded-2xl border border-border bg-card shadow-2xl shadow-black/40 p-5 sm:p-6">
               {/* Dashboard header */}
               <div className="flex items-center justify-between mb-5">
                 <div className="flex items-center gap-2">
-                  <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+                  <div className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                     <Bot className="size-4" />
                   </div>
                   <div>
@@ -139,7 +139,7 @@ export function HeroSection() {
                     <p className="text-[10px] text-muted-foreground">AI Learning Hub</p>
                   </div>
                 </div>
-                <Badge className="text-[10px] rounded-full bg-green-50 text-green-700 border-green-200 border">
+                <Badge className="text-[10px] rounded-full bg-primary/15 text-primary border-primary/20 border">
                   Active
                 </Badge>
               </div>
@@ -177,7 +177,7 @@ export function HeroSection() {
                   {avatarColors.slice(0, 4).map((color, i) => (
                     <div
                       key={i}
-                      className={`size-6 rounded-full ${color} ring-2 ring-white`}
+                      className={`size-6 rounded-full ${color} ring-2 ring-card`}
                       aria-hidden="true"
                     />
                   ))}

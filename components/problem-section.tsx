@@ -56,7 +56,7 @@ export function ProblemSection() {
           {problems.map(({ icon: Icon, text, color }) => (
             <Card
               key={text}
-              className="group border border-border bg-white shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
+              className="group border border-border bg-card shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
             >
               <CardContent className="flex items-start gap-4 p-5">
                 <div

@@ -12,7 +12,7 @@ const badges = [
 
 export function TrustStrip() {
   return (
-    <section className="border-y border-border bg-white py-5" aria-label="Community highlights">
+    <section className="border-y border-border bg-card py-5" aria-label="Community highlights">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-center gap-3">
           {badges.map((badge) => (

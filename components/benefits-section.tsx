@@ -16,7 +16,7 @@ export function BenefitsSection() {
   return (
     <section
       id="benefits"
-      className="py-20 sm:py-28 bg-slate-50/70"
+      className="py-20 sm:py-28 bg-background"
       aria-labelledby="benefits-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -33,11 +33,11 @@ export function BenefitsSection() {
           {benefits.map((benefit, i) => (
             <Card
               key={i}
-              className="group border border-border bg-white shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-green-200"
+              className="group border border-border bg-card shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 hover:border-primary/40"
             >
               <CardContent className="flex items-start gap-3 p-5">
                 <CheckCircle2
-                  className="size-5 text-green-500 shrink-0 mt-0.5 transition-transform group-hover:scale-110"
+                  className="size-5 text-primary shrink-0 mt-0.5 transition-transform group-hover:scale-110"
                   aria-hidden="true"
                 />
                 <p className="text-sm font-medium text-foreground leading-relaxed">{benefit}</p>
